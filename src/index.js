@@ -11,7 +11,7 @@ import "bootstrap/dist/css/bootstrap.min.css";
 ReactDOM.render(
   <>
     <Provider store={store}>
-      <BrowserRouter>
+      <BrowserRouter basename={process.env.PUBLIC_URL}>
         <PersistGate persistor={persistor}>
           <App />
         </PersistGate>
