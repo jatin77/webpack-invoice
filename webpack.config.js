@@ -4,9 +4,10 @@ const webpack = require('webpack')
 module.exports = {
   entry: "./src/index.js",
   output: {
-    path: path.join(__dirname,"/build"),
-    filename: "build.js",
+    path: path.join(__dirname, "dist"),
+    filename: "bundle.js",
   },
+ 
   module: {
     rules: [
       {
